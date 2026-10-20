@@ -5,6 +5,6 @@ nixPkgs = ["nodejs_22", "unzip", "curl"]
 cmds = [
   "curl -fsSL -o /tmp/bun.zip https://github.com/oven-sh/bun/releases/latest/download/bun-linux-x64-baseline.zip",
   "unzip -o /tmp/bun.zip -d /tmp",
-  "install -m 755 /tmp/bun-linux-x64-baseline/bun /usr/local/bin/bun",
-  "bun i --no-save"
+  "install -m 755 /tmp/bun-linux-x64-baseline/bun /usr/bin/bun",
+  "/usr/bin/bun i --no-save"
 ]
